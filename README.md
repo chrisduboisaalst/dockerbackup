@@ -7,7 +7,7 @@ The executable needs to be in the directory where all .yml config files are to h
 Config file is YML based format.
 It's a mix between docker compose and docker run syntax. One of the evolutions should be to fully adapt the docker compose .yml file syntax and abandon the docker run syntax.
 I have this running for the moment at my server and it is running fine.
-YML file format :
+
 			Detach        bool     `yaml:"detach"`
 			Privileged    bool     `yaml:"privileged"`
 			Init          bool     `yaml:"init"`
@@ -50,6 +50,12 @@ YML file format :
          --help, -h      show help (default: false)
          --version, -v   print the version (default: false)
          
+ ## Autobackup all your docker containers and volumes
+ This is an example on how to use the CLI in Cron to automatically backup all your container and volumes defined by the .yml config files in one directory 
+ 
+ 	/home/chris/bin/dockerbackupv2 --all --ymldir /home/chris/docker/ backup
+ 
+ 
  ## Things to tweak...
  
  You need to use your own repository in dockerhub.
