@@ -23,8 +23,8 @@ I have this running for the moment at my server and it is running fine.
 			Name          string   `yaml:"name"`
 			Githubimage   string   `yaml:"githubimage"`
   
-  Name is the final name to appear in docker ps./n
-  Githubimage is the image to pull.
+  'name' is the final name to appear in docker ps.
+  'githubimage' is the image to pull.
   
   ## CLI interface
   The program is CLI based.
