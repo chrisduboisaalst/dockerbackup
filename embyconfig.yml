@@ -1,0 +1,20 @@
+# Run image Initial download from Github
+runimage:
+  detach: true
+  restart: always
+  volume:
+    - embyconfig:/config
+    - /mnt/movies:/mnt/share1
+    - /mnt/sound:/mnt/share2
+    - /mnt/raid/Photo:/mnt/sharephoto
+  device: 
+    - /dev/dri/renderD128
+  publish:
+    - 8096:8096
+    - 8920:8920 
+  env:
+    - UID=1000
+    - GID=985
+  name: emby
+  githubimage: emby/embyserver
+
