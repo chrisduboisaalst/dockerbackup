@@ -8,20 +8,20 @@ Config file is YML based format.
 It's a mix between docker compose and docker run syntax. One of the evolutions should be to fully adapt the docker compose .yml file syntax and abandon the docker run syntax.
 I have this running for the moment at my server and it is running fine.
 YML file format :
-- Detach        bool     `yaml:"detach"`
-	Privileged    bool     `yaml:"privileged"`
-	Init          bool     `yaml:"init"`
-	MacMINAddress string   `yaml:"mac-address"`
-	Link          string   `yaml:"link"`
-	Restart       string   `yaml:"restart"`
-	ShmMINsize    string   `yaml:"shm-size"`
-	Net           string   `yaml:"net"`
-	Volume        []string `yaml:"volume"`
-	Device        []string `yaml:"device"`
-	Publish       []string `yaml:"publish"`
-	Env           []string `yaml:"env"`
-	Name          string   `yaml:"name"`
-	Githubimage   string   `yaml:"githubimage"`
+			Detach        bool     `yaml:"detach"`
+			Privileged    bool     `yaml:"privileged"`
+			Init          bool     `yaml:"init"`
+			MacMINAddress string   `yaml:"mac-address"`
+			Link          string   `yaml:"link"`
+			Restart       string   `yaml:"restart"`
+			ShmMINsize    string   `yaml:"shm-size"`
+			Net           string   `yaml:"net"`
+			Volume        []string `yaml:"volume"`
+			Device        []string `yaml:"device"`
+			Publish       []string `yaml:"publish"`
+			Env           []string `yaml:"env"`
+			Name          string   `yaml:"name"`
+			Githubimage   string   `yaml:"githubimage"`
   
   Name is the final name to appear in docker ps
   Githubimage is the image to pull
