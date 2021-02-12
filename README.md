@@ -1,5 +1,5 @@
 # dockerbackup
-Allows to test, run, backup and restore automatically docker containers and their volumes, tThriggered by a cron job.
+Allows to test, run, backup and restore automatically docker containers and their volumes, triggered by a cron job.
 The executable needs to be in the directory where all .yml config files are to have an easy cron based approach.
 
 # Description
