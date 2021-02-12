@@ -53,7 +53,7 @@ I have this running for the moment at my server and it is running fine.
  ## Autobackup all your docker containers and volumes
  This is an example on how to use the CLI in Cron to automatically backup all your container and volumes defined by the .yml config files in one directory 
  
- 	/home/chris/bin/dockerbackupv2 --all --ymldir /home/chris/docker/ backup
+ 	/home/chris/bin/dockerbackup --all --ymldir /home/chris/docker/ backup
  
  
  ## Things to tweak...
